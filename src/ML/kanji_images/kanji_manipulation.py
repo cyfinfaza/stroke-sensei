@@ -62,7 +62,7 @@ def manipulate_kanji_image(image_path, output_dir, num_images=20):
         elif transformation == 'shift':
             transformed_img = random_shift(img)
 
-        cv2.imwrite(os.path.join(output_dir, f"kanji_{i + 1}.png"), transformed_img)
+        cv2.imwrite(os.path.join(output_dir, f"kanji_2_{i + 100}.png"), transformed_img)
 
 image_path = '../kanji_images/kanji_2/image_2.png'  
 output_dir = '../kanji_images/kanji_2/'  
